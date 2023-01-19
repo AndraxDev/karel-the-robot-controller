@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+tasks {
+    clean
+}
+
+android {
+    namespace 'org.teslasoft.experiments.cam'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "org.teslasoft.experiments.cam"
+        minSdk 30
+        targetSdk 33
+        versionCode 2
+        versionName "1.1"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            multiDexEnabled true
+        }
+
+//        debug {
+//            debuggable false
+//            minifyEnabled true
+//            shrinkResources true
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.11'
+}

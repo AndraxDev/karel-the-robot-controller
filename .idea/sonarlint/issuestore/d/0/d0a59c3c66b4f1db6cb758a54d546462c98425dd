@@ -1,0 +1,14 @@
+
+i
+java:S2637U"GParameter 1 to this call is marked "@NonNull" but null could be passed.(ù ‰òúÿÿÿÿ8ÁÔÍÔÜ0
+
+java:S1450"_Remove the "indicatorsToggle" field and declare it as a local variable in the relevant methods.(ŒÙ’Šûÿÿÿÿ8œ¸ÔÜ0
+s
+java:S1450"QRemove the "ui" field and declare it as a local variable in the relevant methods.(£¤ğ¶øÿÿÿÿ8œ¸ÔÜ0
+y
+java:S1450="\Remove the "urlCameraInfo" field and declare it as a local variable in the relevant methods.(È¯¦¶8œ¸ÔÜ0
+u
+java:S3776š"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Á¢Œºûÿÿÿÿ8Á¿ËÔÜ0
+^	java:S125ş"<This block of commented-out lines of code should be removed.(™‰£õøÿÿÿÿ8Í¿ËÔÜ0
+N
+java:S1068="1Remove this unused "urlCameraInfo" private field.(È¯¦¶8­œ¸ÔÜ0
